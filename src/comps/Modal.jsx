@@ -25,8 +25,8 @@ function Modal({
             How did we do?
           </h1>
           <p className="font-Overpass text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum
-            itaque minus perferendis labore?
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
           </p>
           <div className="font-Overpass flex justify-between mt-4">
             <div

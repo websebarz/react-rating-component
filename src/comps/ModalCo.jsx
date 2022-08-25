@@ -115,8 +115,8 @@ function ModalCo({
               Thank You!
             </h2>
             <p className="text-center font-Overpass text-gray-600 mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, labore!
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
             </p>
           </div>
           <div className="flex items-center justify-center mt-2">
