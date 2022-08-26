@@ -1,6 +1,11 @@
 function Modal({
   submitEl,
   rated,
+  oneStar,
+  twoStar,
+  threeStar,
+  fourStar,
+  fiveStar,
   rateOneStar,
   rateTwoStar,
   rateThreeStar,
@@ -29,36 +34,96 @@ function Modal({
             feedback is appreciated to help us improve our offering!
           </p>
           <div className="font-Overpass flex justify-between mt-4">
-            <div
-              onClick={rateOneStar}
-              className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
-            >
-              <span>1</span>
-            </div>
-            <div
-              onClick={rateTwoStar}
-              className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
-            >
-              <span>2</span>
-            </div>
-            <div
-              onClick={rateThreeStar}
-              className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
-            >
-              <span>3</span>
-            </div>
-            <div
-              onClick={rateFourStar}
-              className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
-            >
-              <span>4</span>
-            </div>
-            <div
-              onClick={rateFiveStar}
-              className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
-            >
-              <span>5</span>
-            </div>
+            {oneStar !== 1 && (
+              <button
+                onClick={rateOneStar}
+                className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>1</span>
+              </button>
+            )}
+            {oneStar === 1 && (
+              <button
+                onClick={rateOneStar}
+                className="flex items-center justify-center w-10 h-10 text-white bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>1</span>
+              </button>
+            )}
+            {twoStar !== 2 && (
+              <button
+                onClick={rateTwoStar}
+                className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>2</span>
+              </button>
+            )}
+            {twoStar === 2 && (
+              <button
+                onClick={rateTwoStar}
+                className="flex items-center justify-center w-10 h-10 text-white bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>2</span>
+              </button>
+            )}
+            {threeStar !== 3 && (
+              <button
+                onClick={rateThreeStar}
+                className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>3</span>
+              </button>
+            )}
+            {threeStar === 3 && (
+              <button
+                onClick={rateThreeStar}
+                className="flex items-center justify-center w-10 h-10 text-white bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>3</span>
+              </button>
+            )}
+            {fourStar !== 4 && (
+              <button
+                onClick={rateFourStar}
+                className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>4</span>
+              </button>
+            )}
+            {fourStar === 4 && (
+              <button
+                onClick={rateFourStar}
+                className="flex items-center justify-center w-10 h-10 text-white bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>4</span>
+              </button>
+            )}
+            {fiveStar !== 5 && (
+              <button
+                onClick={rateFiveStar}
+                className="flex items-center justify-center w-10 h-10 text-gray-400 hover:text-gray-200 bg-gray-700 hover:bg-gray-500 active:bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>5</span>
+              </button>
+            )}
+            {fiveStar === 5 && (
+              <button
+                onClick={rateFiveStar}
+                className="flex items-center justify-center w-10 h-10 text-white bg-orange-500 rounded-full cursor-pointer"
+                disabled={rated ? true : false}
+              >
+                <span>5</span>
+              </button>
+            )}
           </div>
           <div className="flex items-center justify-center mt-6">
             <button

@@ -103,7 +103,7 @@ function ModalCo({
               </svg>
             </i>
             <div className="flex align-center justify-center w-fit p-2 rounded-full bg-gray-700 w-4/5 mt-6">
-              <p className="font-Overpass text-sm text-orange-500">
+              <p className="font-Overpass text-md text-orange-500">
                 {oneStar === 1 && `You selected ${oneStar} out of 5`}
                 {twoStar === 2 && `You selected ${twoStar} out of 5`}
                 {threeStar === 3 && `You selected ${threeStar} out of 5`}

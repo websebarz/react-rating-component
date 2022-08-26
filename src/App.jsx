@@ -75,6 +75,11 @@ function App() {
         <Modal
           submitEl={submitEl}
           rated={rated}
+          oneStar={oneStar}
+          twoStar={twoStar}
+          threeStar={threeStar}
+          fourStar={fourStar}
+          fiveStar={fiveStar}
           rateOneStar={rateOneStar}
           rateTwoStar={rateTwoStar}
           rateThreeStar={rateThreeStar}
